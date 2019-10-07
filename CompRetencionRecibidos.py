@@ -478,7 +478,7 @@ def readXML(path,date):
         # Iterate over the data and write it out row by row. 
         for x in (elements):
 
-            for i in range(0, 30):
+            for i in range(0, 31):
 
                 sheet1.write(row+1, col+i, elements[row][col+i])
                 
@@ -494,12 +494,12 @@ def readXML(path,date):
 
         return "Error"
 
-#readXML('C:/Users/Bryan/Desktop/Lector_de_XML/XMLCOMP','TEST')
+readXML('C:/Users/Bryan/Desktop/Lector_de_XML/XML','TEST')
 
-if __name__ == "__main__":
-    path=str(sys.argv[1])
-    date=str(sys.argv[2])
-    readXML(path,date)
+#if __name__ == "__main__":
+#    path=str(sys.argv[1])
+#    date=str(sys.argv[2])
+#    readXML(path,date)
     
 
 
